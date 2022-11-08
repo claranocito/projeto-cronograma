@@ -1,0 +1,65 @@
+
+.banner-container {
+    padding: 20px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("./Banner1.png") no-repeat top;
+}
+
+.h1-banner {
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 80px;
+    text-align: center;
+    font-family: VanguardCF;
+}
+
+.text-container {
+    max-width: 600px;
+    text-align: center;
+
+}
+
+
+.p-banner {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 60px;
+    font-family: AprovaSans;
+}
+
+.button-banner {
+    background-color: #00E88F;
+    padding: 20px;
+    border-radius: 100px;
+    font-family: AprovaSans;
+    font-size: 18px;
+    width: 350px;
+}
+
+strong {
+    color: #00E88F;
+}
+
+@media screen and (max-width: 600px) {
+    .h1-banner {
+        font-size: 60px;
+    }
+
+    .p-banner {
+        font-size: 15px;
+    }
+
+    .banner-container {
+        padding: 20px;
+    }
+
+    .button-banner {
+        font-size: 14px;
+        width: 240px;
+        padding: 15px;
+    }
+}

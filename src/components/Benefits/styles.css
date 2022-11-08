@@ -1,0 +1,38 @@
+.benefits-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    color: white;
+}
+
+.h2-benefits {
+    font-family: VanguardCF;
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+
+.benefits-text {
+    padding: 70px;
+    line-height: 50px;
+    font-family: AprovaSans;
+    font-size: 24px;
+}
+
+strong {
+    color: #00E88F;
+}
+
+@media screen and (max-width: 600px) {
+    .h2-benefits {
+        font-size: 50px
+    }
+
+    .benefits-text { 
+        font-size: 15px;
+    }
+
+    .benefits-img {
+        display: none;
+    }
+}

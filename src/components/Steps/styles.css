@@ -1,0 +1,49 @@
+.steps-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    color: white;
+}
+
+.h2-steps {
+    font-family: VanguardCF;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+h3 {
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.steps-text {
+    padding: 70px;
+    line-height: 50px;
+    font-family: AprovaSans;
+    font-size: 24px;
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    .steps-img {
+        display: none;
+    }
+
+    .h2-steps {
+        font-size: 50px
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .steps-text { 
+        font-size: 15px;
+        
+    }
+
+    p {
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* Aprova Sans - Regular */
+@font-face {
+	font-family: AprovaSans;
+	src: url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Regular.woff2) format("woff2"),
+		url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Regular.woff) format("woff"),
+		url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Regular.otf) format("opentype"),
+    url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Regular.ttf) format("truetype");
+	font-style: normal
+}
+
+/* Aprova Sans - Bold */
+@font-face {
+	font-family: AprovaSans;
+	src: url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Bold.woff2) format("woff2"),
+		url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Bold.woff) format("woff"),
+		url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Bold.otf) format("opentype"),
+		url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Bold.ttf) format("truetype");
+	font-weight: 800;
+	font-style: normal
+}
+
+/* Aprova Sans - Black */
+@font-face {
+	font-family: AprovaSans;
+	src: url('https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Black.woff2') format('woff2'),
+		url('https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Black.woff') format('woff'),
+		url('https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Black.otf') format('opentype'),
+		url('https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/aprova-sans/Aprova-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+/* Vanguard-CF - Bold */
+@font-face {
+	font-family: VanguardCF;
+	src: url(https://d3awytnmmfk53d.cloudfront.net/landings/static/fonts/vanguard/Vanguard-CF-Bold.otf) format("opentype");
+	font-style: normal
+}
+
