@@ -25,13 +25,14 @@ h3 {
     text-align: right;
 }
 
+
 @media screen and (max-width: 600px) {
     .steps-img {
         display: none;
     }
 
     .h2-steps {
-        font-size: 50px
+        font-size: 40px
     }
 
     h3 {

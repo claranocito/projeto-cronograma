@@ -1,13 +1,13 @@
 import './styles.css'
 import React from 'react'
-import './img-benefits.png'
+import Img from './img-benefits.png'
 
 const Benefits = () => {
     return (
         <div className='benefits-container'>
             <div className='benefits-text'>
                 <h2 className='h2-benefits'><strong>BENEFÍCIOS</strong> DE TER UM CRONOGRAMA DE ESTUDOS</h2>
-                <ul>
+                <ul className='topics'>
                     <li>melhora da gestão de tempo;</li>
                     <li>maior aproveitamento dos estudos;</li>
                     <li>ânimo para continuar a estudar com acompanhamento dos avanços obtidos;</li>
@@ -16,7 +16,7 @@ const Benefits = () => {
             </div>
 
             <div className='benefits-img'>
-                <img src= "img-benefits.png" />
+                <img src={Img} />
             </div>
         </div>
     )

@@ -19,13 +19,18 @@
     font-size: 24px;
 }
 
+
+.topics {
+    padding: 20px;
+}
+
 strong {
     color: #00E88F;
 }
 
 @media screen and (max-width: 600px) {
     .h2-benefits {
-        font-size: 50px
+        font-size: 40px
     }
 
     .benefits-text { 

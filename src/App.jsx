@@ -1,8 +1,10 @@
 import { Banner } from "./components/Banner"
 import { Header } from "./components/Header"
-import "./assets/global.css"
 import { Benefits } from "./components/Benefits"
 import { Steps } from "./components/Steps"
+import { Timeline } from "./components/Timeline"
+import { Products } from "./components/Products"
+import "./assets/global.css"
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <Banner />
       <Benefits />
       <Steps />
+      <Timeline />
+      <Products />
     </div>
   )
 }

@@ -1,11 +1,11 @@
 
 import './styles.css'
-import './logo.png'
+import Logo from './logo-desco.png'
 
 const Header = () => {
     return (
         <div className="header">
-            <img src="./logo.png"/>
+            <img src={Logo}/>
         </div>
     )
 }

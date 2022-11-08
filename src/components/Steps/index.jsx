@@ -1,10 +1,11 @@
 import './styles.css'
+import Img from './steps.png'
 
 const Steps = () => {
     return (
         <div className='steps-container'>
             <div className='steps-img'>
-                <img src="./steps.png" />
+                <img src={Img} />
             </div>
 
             <div className='steps-text'>
