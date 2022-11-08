@@ -4,7 +4,10 @@ import { Benefits } from "./components/Benefits"
 import { Steps } from "./components/Steps"
 import { Timeline } from "./components/Timeline"
 import { Products } from "./components/Products"
+import { Contact } from "./components/Contact"
 import "./assets/global.css"
+import { Guide } from "./components/Guide"
+
 
 
 function App() {
@@ -16,6 +19,7 @@ function App() {
       <Steps />
       <Timeline />
       <Products />
+      <Contact />
     </div>
   )
 }

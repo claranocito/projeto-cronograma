@@ -1,5 +1,4 @@
 import './styles.css'
-import React from 'react'
 import Img from './img-benefits.png'
 
 const Benefits = () => {
