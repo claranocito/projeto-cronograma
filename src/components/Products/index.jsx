@@ -34,7 +34,6 @@ const Products = () => {
             <h2 className='h2-products'>Pós - Graduação</h2>
             <ul className='list'>
                 <li>Pós em Direito</li>
-                <li>Pós em Direito</li>
                 <li>Pós em Educação</li>
                 <li>Pós em Tecnologia</li>
                 <li>Pós em Marketing</li>
