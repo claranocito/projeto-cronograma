@@ -1,6 +1,6 @@
 
 .banner-container {
-    padding: 20px 20px 60px;
+    padding: 20px 20px 80px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@
 
 .h1-banner {
     color: rgb(255, 255, 255);
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 50px;
     font-size: 80px;
     text-align: center;
@@ -51,10 +51,11 @@ strong {
 
     .p-banner {
         font-size: 15px;
+        padding-bottom: 50px;
     }
 
     .banner-container {
-        padding: 20px;
+        padding: 40px;
     }
 
     .button-banner {
@@ -62,4 +63,6 @@ strong {
         width: 240px;
         padding: 15px;
     }
+
+
 }

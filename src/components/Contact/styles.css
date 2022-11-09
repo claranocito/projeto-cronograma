@@ -1,0 +1,44 @@
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone {
+    padding: 30px;
+}
+
+.oi {
+    padding: 20px;
+    justify-content: space-between;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: AprovaSans;
+}
+
+a:hover {
+    color: grey;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        display: inline-block;
+    }
+
+    .contacts {
+        font-size: 12px;
+    }
+
+    .icone {
+        padding: 30px;
+    }
+}

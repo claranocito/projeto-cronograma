@@ -17,6 +17,7 @@ function App() {
       <Banner />
       <Benefits />
       <Steps />
+      <Guide />
       <Timeline />
       <Products />
       <Contact />
