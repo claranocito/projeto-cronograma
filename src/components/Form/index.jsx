@@ -43,7 +43,7 @@ const Form = () => {
         <option value="cincoDias">5 dias</option>
       </select>
       <p></p>
-      <button type="">Criar meu cronograma</button>
+      <button className="button-form" type="">Criar meu cronograma</button>
     </div>
   );
 };
