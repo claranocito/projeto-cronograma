@@ -17,10 +17,10 @@ const Contact = () => {
            </div>
 
            <div className='redes'>
-           <a><img className='icone' src={instagram} /></a>
-            <a><img className='icone' src={facebook} /></a>
-            <a><img className='icone' src={youtube}/></a>
-            <a><img className='icone' src={twitter} /></a>
+           <a href='https://www.instagram.com/descomplica/' target='_blank'><img className='icone' src={instagram} /></a>
+            <a href='https://www.facebook.com/descomplica.vestibulares' target='_blank'><img className='icone' src={facebook} /></a>
+            <a href='https://www.youtube.com/channel/UCT0JugAtGmqiYkwxFZOwAtg' target='_blank'><img className='icone' src={youtube}/></a>
+            <a href='https://twitter.com/descomplica' target='_blank'><img className='icone' src={twitter} /></a>
            </div>
         </div>
     )

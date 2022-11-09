@@ -24,6 +24,9 @@ h3 {
     text-align: right;
 }
 
+.steps-img {
+    padding: 90px 70px 70px;
+}
 
 @media screen and (max-width: 600px) {
     .steps-img {

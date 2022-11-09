@@ -4,7 +4,7 @@ import Logo from './logo-desco.png'
 const Header = () => {
     return (
         <div className="header">
-            <img src={Logo}/>
+            <img className='logo' src={Logo}/>
         </div>
     )
 }

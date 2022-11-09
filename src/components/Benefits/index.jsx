@@ -15,7 +15,7 @@ const Benefits = () => {
             </div>
 
             <div className='benefits-img'>
-                <img src={Img} />
+                <img className='img-b' src={Img} />
             </div>
         </div>
     )

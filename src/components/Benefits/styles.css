@@ -12,15 +12,22 @@
 }
 
 .benefits-text {
-    padding: 70px;
+    padding: 70px 70px 70px;
     line-height: 50px;
     font-family: AprovaSans;
     font-size: 24px;
 }
 
+.benefits-img {
+    padding-top: 100px;
+}
 
 .topics {
     padding: 20px;
+}
+
+.img-b {
+    padding: 80px;
 }
 
 strong {

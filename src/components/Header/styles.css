@@ -1,10 +1,10 @@
 
-img {
+.logo {
     padding: 30px 70px;
 }
 
 @media screen and (max-width: 600px) {
-    img {
+    .logo {
         width: 25px;
         height: 28.59px;
         padding: 30px 40px;

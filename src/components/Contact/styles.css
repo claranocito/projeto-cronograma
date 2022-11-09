@@ -57,7 +57,7 @@ a:hover {
     }
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 375px) {
     .icone {
         padding: 31px;
     }
