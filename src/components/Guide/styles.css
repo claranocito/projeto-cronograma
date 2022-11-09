@@ -26,6 +26,7 @@ iframe {
 @media screen and (max-width: 600px) {
     .h2-guide {
         font-size: 40px;
+        padding: 40px;
     }
 
 }

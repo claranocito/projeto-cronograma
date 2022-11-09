@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     color: white;
+    padding-top: 70px;
 }
 
 .h2-steps {
@@ -29,6 +30,10 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+    .steps-container {
+        padding-top: 0px;
+    }
+
     .steps-img {
         display: none;
     }
