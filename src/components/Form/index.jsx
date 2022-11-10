@@ -47,4 +47,4 @@ const Form = () => {
     </div>
   );
 };
-export { Form }
+export { Form };

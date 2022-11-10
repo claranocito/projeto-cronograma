@@ -10,7 +10,6 @@ const Timeline = () => {
       </h2>
       <div className="timeline">
         <Form />
-        <Modal />
       </div>
     </div>
   );
