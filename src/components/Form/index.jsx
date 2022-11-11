@@ -1,5 +1,10 @@
 import "./styles.css";
+import React, { useState } from "react";
+import Modal from "/Users/BrunoCesar/Desktop/projeto-cronograma/src/components/Modal/index.jsx";
+
 const Form = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="container-form">
       <h3 className="h3-form"> Preecha os dados abaixo:</h3>
@@ -43,9 +48,12 @@ const Form = () => {
         <option value="cincoDias">5 dias</option>
       </select>
       <p></p>
-      <button className="button-form" type="">
-        Criar meu cronograma
-      </button>
+      <div>
+        <button className="button-form" onClick={() => setOpenModal(true)}>
+          Criar meu cronograma
+        </button>
+        <Modal open={openModal} onClose={() => setOpenModal(false)} />
+      </div>
     </div>
   );
 };
