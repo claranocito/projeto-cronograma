@@ -21,7 +21,7 @@ const Modal = ({ open, onClose }) => {
             </h2>
             <label>Email:</label>
             <input type="email" className="email"></input>
-            <label>Telefone (00-000000000):</label>
+            <label>Telefone (00)-000000000):</label>
             <input type="tel" className="phone"></input>
           </div>
           <div className="btnContainer">

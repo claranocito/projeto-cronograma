@@ -17,9 +17,9 @@ const Form = () => {
       </label>
       <p></p>
       <select className="input">
-        <option value="manha">Manhã</option>
-        <option value="tarde">Tarde</option>
-        <option value="noite">Noite</option>
+        <option value="ate-duas-horas">Até 2 horas</option>
+        <option value="entre-duas-e-quatro-horas">Entre 2 e 4 horas</option>
+        <option value="mais-de-quatro-horas">Mais de 4 horas</option>
       </select>
       <p></p>
       <label className="enun-timeline">
@@ -43,7 +43,9 @@ const Form = () => {
         <option value="cincoDias">5 dias</option>
       </select>
       <p></p>
-      <button className="button-form" type="">Criar meu cronograma</button>
+      <button className="button-form" type="">
+        Criar meu cronograma
+      </button>
     </div>
   );
 };
