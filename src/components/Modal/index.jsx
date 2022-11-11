@@ -1,5 +1,4 @@
 import React from "react";
-import "/Users/BrunoCesar/Desktop/projeto-cronograma/src/components/Modal/style.css";
 
 const Modal = ({ open, onClose }) => {
   if (!open) return null;

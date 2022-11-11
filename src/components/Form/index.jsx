@@ -1,6 +1,6 @@
 import "./styles.css";
 import React, { useState } from "react";
-import Modal from "/Users/BrunoCesar/Desktop/projeto-cronograma/src/components/Modal/index.jsx";
+import Modal from "../Modal";
 
 const Form = () => {
   const [openModal, setOpenModal] = useState(false);
