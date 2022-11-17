@@ -1,25 +1,11 @@
-.container-form {
-  text-align: left;
-  justify-content: space-around;
-  font-family: AprovaSans;
-  font-size: 25px;
-}
-
-.h3-form {
-  font-family: AprovaSans;
-  font-size: 42px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
 .input {
-  width: 90%;
+  width: 80%;
   height: 30px;
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.button-form {
+.button {
   background-color: #269ff9;
   padding: 20px;
   border-radius: 100px;
@@ -27,15 +13,6 @@
   font-size: 18px;
   width: 90%;
   margin-top: 20px;
-}
-.enun-timeline {
-  font-family: AprovaSans;
-  font-size: 25px;
-}
-.periudoDia {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-inline: 5px;
 }
 
 @media screen and (max-width: 500px) {

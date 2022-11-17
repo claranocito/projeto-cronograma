@@ -1,6 +1,5 @@
 import "./styles.css";
 import { Form } from "../Form";
-import Modal from "../Modal";
 
 const Timeline = () => {
   return (

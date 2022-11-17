@@ -1,60 +1,93 @@
-import "./styles.css";
+import "./stylesForm.css";
 import React, { useState } from "react";
-import Modal from "../Modal";
+import FormStap1 from "./FormStap1";
+import FormStap2 from "./FormStap2";
+import FormStap3 from "./FormStap3";
+import FormStap4 from "./FormStap4";
+import FormStap5 from "./FormStap5";
+import FormStapFinal from "./ForStapFinal";
 
-const Form = () => {
-  const [openModal, setOpenModal] = useState(false);
+function Form() {
+  const [page, setPage] = useState(0);
+
+  const [formData, setFormData] = useState({
+    email: "",
+    horas: "",
+    name: "",
+    dias: "",
+    periudo: "",
+    tel: "",
+  });
+
+  const FormTitles = [
+    "Preencha os dados abaixo:",
+    "Preencha os dados abaixo:",
+    "Preencha os dados abaixo:",
+    "Preencha os dados abaixo:",
+    "Preencha os dados abaixo:",
+    "Confirme seus dados antes do envio:",
+  ];
+
+  const SubTitles = [
+    "1. Qual o seu nome?",
+    "2. Quantas horas você tem para estudar por dia?",
+    "3. Você prefere estudar em qual parte do dia?",
+    "4. Você quer estudar quantos dias por semana? ",
+    "5. Para finalizar seu cronograma nos informe um telefone válido:",
+    "6. E um email válido:",
+  ];
+
+  const PageDisplay = () => {
+    if (page === 0) {
+      return <FormStap1 formData={formData} setFormData={setFormData} />;
+    }
+    if (page === 1) {
+      return <FormStap2 formData={formData} setFormData={setFormData} />;
+    }
+    if (page === 2) {
+      return <FormStap3 formData={formData} setFormData={setFormData} />;
+    }
+    if (page === 3) {
+      return <FormStap4 formData={formData} setFormData={setFormData} />;
+    } else if (page === 4) {
+      return <FormStap5 formData={formData} setFormData={setFormData} />;
+    } else {
+      return <FormStapFinal formData={formData} setFormData={setFormData} />;
+    }
+  };
 
   return (
-    <div className="container-form">
-      <h3 className="h3-form"> Preecha os dados abaixo:</h3>
-      <label className="enun-timeline">1. Qual seu nome?</label>
-      <p></p>
-      <input
-        type="text"
-        className="input"
-        id="inputNome"
-        placeholder="Digite seu nome"
-      ></input>
-      <p></p>
-      <label className="enun-timeline">
-        2. Quantas horas você tem para estudar por dia?
-      </label>
-      <p></p>
-      <select className="input">
-        <option value="ate-duas-horas">Até 2 horas</option>
-        <option value="entre-duas-e-quatro-horas">Entre 2 e 4 horas</option>
-        <option value="mais-de-quatro-horas">Mais de 4 horas</option>
-      </select>
-      <p></p>
-      <label className="enun-timeline">
-        3. Você prefere estudar em qual parte do dia?
-      </label>
-      <p></p>
-      <input type="radio" className="periudoDia" id="manha"></input>
-      <label>Manhã</label>
-      <input type="radio" className="periudoDia" id="tarde"></input>
-      <label>Tarde</label>
-      <input type="radio" className="periudoDia" id="noite"></input>
-      <label>Noite</label>
-      <p></p>
-      <label className="enun-timeline">
-        4. Você quer estudar quantos dias na semana?
-      </label>
-      <p></p>
-      <select className="input">
-        <option value="doisDias">Até 2 dias</option>
-        <option value="doisEquatroDias">Entre 2 e 4 dias</option>
-        <option value="cincoDias">5 dias</option>
-      </select>
-      <p></p>
-      <div>
-        <button className="button-form" onClick={() => setOpenModal(true)}>
-          Criar meu cronograma
-        </button>
-        <Modal open={openModal} onClose={() => setOpenModal(false)} />
+    <div className="form">
+      <div className="form-container">
+        <div className="header">
+          <h1>{FormTitles[page]}</h1>
+          <h3>{SubTitles[page]}</h3>
+        </div>
+        <div className="body">{PageDisplay()}</div>
+        <div className="footer">
+          <button
+            disabled={page == 0}
+            onClick={() => {
+              setPage((currPage) => currPage - 1);
+            }}
+          >
+            Prev
+          </button>
+          <button
+            onClick={() => {
+              if (page === FormTitles.length - 1) {
+                alert("FORM SUBMITTED");
+                console.log(formData);
+              } else {
+                setPage((currPage) => currPage + 1);
+              }
+            }}
+          >
+            {page === FormTitles.length - 1 ? "Submit" : "Next"}
+          </button>
+        </div>
       </div>
     </div>
   );
-};
+}
 export { Form };
