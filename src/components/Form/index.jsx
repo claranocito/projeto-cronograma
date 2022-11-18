@@ -6,17 +6,18 @@ import FormStap3 from "./FormStap3";
 import FormStap4 from "./FormStap4";
 import FormStap5 from "./FormStap5";
 import FormStapFinal from "./ForStapFinal";
+import * as yup from "yup";
 
 function Form() {
   const [page, setPage] = useState(0);
 
   const [formData, setFormData] = useState({
-    email: "",
+    name: yup.string().required(),
     horas: "",
-    name: "",
-    dias: "",
     periudo: "",
-    tel: "",
+    dias: "",
+    email: yup.string().email().required(),
+    tel: yup.number().required,
   });
 
   const FormTitles = [
