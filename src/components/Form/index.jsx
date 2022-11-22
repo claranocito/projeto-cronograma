@@ -1,4 +1,4 @@
-import "./stylesForm.css";
+import "./styles.css";
 import React, { useState } from "react";
 import FormStap1 from "./FormStap1";
 import FormStap2 from "./FormStap2";

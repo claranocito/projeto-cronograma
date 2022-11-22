@@ -1,28 +1,35 @@
-.input {
-  width: 80%;
+.form {
+  font-family: AprovaSans;
+}
+
+input {
+  width: 30%;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.button {
+
+button {
   background-color: #269ff9;
-  padding: 20px;
+  padding: 13px;
   border-radius: 100px;
   font-family: AprovaSans;
   font-size: 18px;
-  width: 90%;
+  width: 20%;
   margin-top: 20px;
 }
 
 @media screen and (max-width: 500px) {
-  .container-form {
-    flex-direction: column;
-    top: 0;
-    left: 0;
-    transform: none;
+  .form {
+    font-size: 12px;
+  }
+
+  input {
     width: 100%;
-    height: 100vh;
-    padding: 0px 0px 200px;
+  }
+
+  button {
+    width: 70%;
   }
 }
